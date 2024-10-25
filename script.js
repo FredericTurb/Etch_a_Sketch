@@ -1,5 +1,20 @@
 createDiv();
-listenMouse();
+
+
+const constReset = document.getElementById("reset");
+constReset.addEventListener("click", myDelete);
+
+function myDelete()
+{
+    alert("test");
+    console.log("test2")
+    const toDelete = document.getElementById("maindiv");
+    while (toDelete.firstChild)
+    {
+        toDelete.firstChild.remove();
+    }
+    createDiv();
+}
 
 function createDiv()
 {
@@ -12,17 +27,9 @@ function createDiv()
     for (let i = 0; i < 256; i++){
         const contentDiv = document.createElement("div");
         contentDiv.classList.add("new")
-        myDiv.appendChild(contentDiv);}
+        myDiv.appendChild(contentDiv);
+        contentDiv.addEventListener("mouseover",() => {
+            contentDiv.style.backgroundColor = 'black';
+        })
+    }
 }
-
-// CREATE EVENT LISTENER MOUSEOVER/MOUSEOUT...
-
-
-
-
-function listenMouse()
-{
-    const myDiv = document.getElementById("maindiv");
-    contentDiv.addEventListener("mouseover",() => {
-        contentDiv.style.backgroundColor = 'lightcoral';
-})}
