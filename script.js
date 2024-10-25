@@ -6,8 +6,6 @@ constReset.addEventListener("click", myDelete);
 
 function myDelete()
 {
-    alert("test");
-    console.log("test2")
     const toDelete = document.getElementById("maindiv");
     while (toDelete.firstChild)
     {
