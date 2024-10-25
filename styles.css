@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    background-image: url('./images/beautiful-shot-snowy-mountain-sunset.jpg'); 
+    background-size: cover;
+    background-position: center; 
+}
+
+#title{
+    position: absolute;  
+    top: 22%; 
+    left: 50%;
+    font-family: ;
+    transform: translateX(-50%);
+    color: rgb(208, 208, 208); 
+    font-size: 40px; 
+    text-shadow: 
+    -3px -2px 0 black,  
+     3px -2px 0 black,
+    -3px  2px 0 black,
+     3px  2px 0 black;
+
+}
+
+#maindiv {
+    background-color: rgb(145, 144, 144);
+    color: white;
+    width: 80%;
+    max-width: 20%;
+    max-height: 100%;
+    height: 40%;
+    display: grid;
+    border: 5px solid rgb(0, 0, 0);
+    
+}
+
+#reset{
+    position: absolute;  
+    top: 73%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0); 
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 5px solid rgb(0, 0, 0);
+}
+#reset:hover {
+    background-color: rgb(139, 139, 139);
+}
+
+.new {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 0;
+    cursor:crosshair;
+}
+
+.new:hover {
+    background-color: rgb(139, 139, 139);
+}
